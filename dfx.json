@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "money-manager-backend": {
+      "main": "src/money-manager-backend/main.mo",
+      "type": "motoko"
+    },
+    "money-manager-frontend": {
+      "dependencies": [
+        "money-manager-backend"
+      ],
+      "source": [
+        "src/money-manager-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "money-manager-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
